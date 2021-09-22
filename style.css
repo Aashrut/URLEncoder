@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
     background-color: #212121;
     font-family: monospace;
     font-size: large;
@@ -21,8 +19,8 @@ h1 {
     color: white;
     padding: 0px 20px 20px 20px;
     text-align: center;
-    max-width: 500px;
-    display: inline-block;
+    width: fit-content;
+    max-width: 40%;
     word-break: break-word;
 }
 button {
@@ -59,4 +57,9 @@ input {
     border: none;
     border-radius: 10px;
     color: #323232;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
 }
