@@ -1344,7 +1344,8 @@ let data = {
 function encode(event) {
     event.preventDefault();
     let str = document.getElementById("url").value;
-    let characterSet = document.getElementById("charset").value;
+    let characterSet = document.querySelector("input[name=charset]:checked").value;
+    console.log(characterSet);
     let encodedStr = "";
     for (let i = 0; i < str.length; i++) {
         if (data.hasOwnProperty(str[i])) {

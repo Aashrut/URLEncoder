@@ -3,6 +3,7 @@
     <head>
         <title>URL Encoder (Percent Encoding)</title>
         <link href="./style.css" rel="stylesheet">
+        <meta charset="utf-8" />
     </head>
     <body>
         <form id="url-form" class="container">
@@ -10,11 +11,12 @@
             <label for="url">Enter URL: </label>
             <input type="text" name="url" id="url" size="36"/>
             <br /><br />
-            <label for="charset">Select Character-set of the URL: </label>
-            <select id="charset">
-                <option value="Windows-1252">Windows-1252</option>
-                <option value="UTF-8">UTF-8</option>
-            </select>
+            <label>Select Character-set of the URL: </label>
+            <br /><br />
+            <label for="Windows-1252">Windows-1252</label>
+            <input type="radio" name="charset" id="Windows-1252" value="Windows-1252" checked />
+            <label for="UTF-8">UTF-8</label>
+            <input type="radio" name="charset" id="UTF-8" value="UTF-8" />
             <br /><br />
             <button type="submit">Encode</button>
             <p id="result"></p>
