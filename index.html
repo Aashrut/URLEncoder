@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Encoder (Percent Encoding)</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form id="url-form">
+            <label for="url">Enter URL: </label>
+            <input type="text" name="url" id="url" />
+            <br /><br />
+            <label for="charset">Select Character-set of the URL: </label>
+            <select id="charset">
+                <option value="Windows-1252">Windows-1252</option>
+                <option value="UTF-8">UTF-8</option>
+            </select>
+            <br /><br />
+            <button type="submit">Submit</button>
+            <p id="result"></p>
+        </form>
+        <script src="./script.js"></script>
+    </body>
+</html>
